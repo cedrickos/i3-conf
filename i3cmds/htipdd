@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+#st -n htip -e htip
+HTOPRC="$HOME/.config/htop/htoprc_min" htop

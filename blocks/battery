@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+OUT=$(acpi -b | cut -d "," -f2)
+
+echo "${OUT}"
+echo "${OUT}"

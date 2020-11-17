@@ -1,0 +1,25 @@
+#!/bin/bash
+
+ICON_PLAY=""
+ICON_PAUSE=""
+ICON_STOP=""
+CUR_ICON=""
+
+INFO_FILE=$(cmus-remote -Q | grep 'file ')
+
+PLAYER_STATUS=$(cmus-remote -Q | grep 'status' | cut -d ' ' -f2-)
+
+if [[ "${PLAYER_STATUS}" = "paused" ]]; then
+  CUR_ICON="${ICON_PAUSE}"
+elif [[ "${PLAYER_STATUS}" = "playing" ]]; then
+  CUR_ICON="${ICON_PLAY}"
+else
+  CUR_ICON="${ICON_STOP}"
+fi
+
+IF="${INFO_FILE##*/}"
+OUT_TEXT="${IF%.mp3}"
+
+echo "${CUR_ICON} ${OUT_TEXT}"
+echo "${CUR_ICON} ${OUT_TEXT}"
+exit
