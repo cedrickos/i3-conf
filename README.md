@@ -4,7 +4,7 @@
 * All this stuff should be put in ~/.conf/i3 or something similar.
 * I use st (https://st.suckless.org/) specifically a slightly modified version of Luke Smith's build (https://github.com/LukeSmithxyz/st). You really just need a terminal that you can name sessions, I believe alacritty and kitty and Urxvt are all other options. Just switch the call to them if you use another terminal.
 * I use rofi to launch programs ($mod+d) and to list open programs ($mod+Tab) and set the settings right in config. It does the job well.
-* I use a custom htop script which is included here too, to use as my popup task manager thing ($mod+Shift+q) think Ctrl-Alt-Del for windows (i3cmds/htipdd). You'll need to put the htop config in the appropriate folder and change the path in htipdd if you want to use.
+* I use a custom htop script which is included here too, to use as my popup task manager thing ($mod+Shift+q) think Ctrl-Alt-Del for windows (i3cmds/htipdd). You'll need to put the htop (htoprc_min) config in the appropriate folder and change the path in htipdd if you want to use.
 * I use a dropdown calculator which I find handy, it is just a python terminal loaded ($mod+a) and is in i3cmds/mathdd. You'll need to chose how you launch python or whatever.
 * All dropdowns are generated with ddspawn which has some general configurations in config but also has the i3cmds/ddspawn.
 ### config
